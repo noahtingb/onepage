@@ -1,9 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <>
       <div className="min-h-screen bg-gray-100">
         <nav className="bg-blue-500 text-white p-4">
           <ul className="flex space-x-4">
@@ -23,7 +22,7 @@ function App() {
         </nav>
 
         <div className="p-8">
-          <Routes>
+          <>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
